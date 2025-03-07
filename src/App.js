@@ -1,4 +1,5 @@
 import { useState } from "react";
+import ChangeName from "./ChangeName";
 
 function App() {
   const [username, setUsername] = useState("");
@@ -19,6 +20,7 @@ function App() {
       />
       <p>Hi there, {username}</p>
       <p>{username} you are doing great today</p>
+      <ChangeName username={username} setUsername={setUsername} />
     </>
   );
 }
